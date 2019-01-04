@@ -1,5 +1,5 @@
 <template>
-	<ul class="c-menu" :class=" styleClass">
+	<ul class="c-menu" :class="styleClass">
 		<li v-for='menu in menuItems'>
 			<a :href="menu.link">{{menu.linkName}}</a>
 		</li>
