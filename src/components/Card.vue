@@ -1,7 +1,7 @@
 <template>
   <div class="c-card article-block">
     <a href="" class="gridContainer">
-      <div class="o-date" v-for='date in cardDate'>
+      <div class="o-date" v-for='date in cardDate' :key="date">
         <span class="month">{{date.month}}</span>
         <span class="day">{{date.day}}</span>
       </div>
@@ -87,6 +87,8 @@ export default {
       color: #c2c2c2;
       transition: all 0.5s ease;
       cursor: pointer;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
     .article{
       overflow: hidden;

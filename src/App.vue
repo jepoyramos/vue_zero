@@ -9,8 +9,7 @@
       <img src="./assets/images/colorfill.jpg" alt="">
     </div>
     <div class="o-articles">
-      <card 
-        :cardDate= "[ {month: 'Jun', day: '30'} ]"
+      <card :cardDate= "[ {month: 'Jun', day: '30'} ]"
         cardHeader= "Hello World"
         cardContent= "Lorem ipsum"
       />
@@ -21,6 +20,8 @@
 <script>
 import Header from './components/Header.vue'
 import Card from './components/Card.vue'
+import Vue from 'vue'
+import VueRouter from 'vue-router'
 
 export default {
   name: 'app',
@@ -30,13 +31,14 @@ export default {
   },
   data () {
     return {
-      greetingHeader: "Welcome to Anvaya Cove",
-      greetingMessage: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto minus voluptates saepe laudantium sint libero eum illum provident, vero omnis et atque laboriosam! Adipisci doloribus temporibus culpa nostrum atque sint!"
+      greetingHeader: 'Welcome to Anvaya Cove',
+      greetingMessage: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto minus voluptates saepe laudantium sint libero eum illum provident, vero omnis et atque laboriosam! Adipisci doloribus temporibus culpa nostrum atque sint!'
     }
   }
 }
 </script>
 
+<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
   body{
     margin: 0;
@@ -49,9 +51,7 @@ export default {
     color: #2c3e50;
   }
   @mixin breakpoint($point){
-    @media (min-width:$point){ 
-      @content ; 
-    }
+    @media (min-width:$point){ @content; }
   }
   .o-banner{
     position: relative;

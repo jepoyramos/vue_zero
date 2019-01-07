@@ -8,7 +8,8 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "vue": "^2.5.21"
+    "vue": "^2.5.21",
+    "vue-router": "^3.0.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.2.0",
@@ -34,9 +35,18 @@
     "rules": {},
     "parserOptions": {
       "parser": "babel-eslint",
-      "rules":{
-        "indent": [2, "tab"],
-        "no-tabs": 0
+      "rules": {
+        "indent": [
+          2,
+          "tab"
+        ],
+        "no-tabs": 0,
+        "ignoreComments": true,
+        "skipBlankLines": true,
+        "no-trailing-whitespace": [
+          true,
+          "ignore-comments"
+        ]
       }
     }
   },
