@@ -14,14 +14,21 @@
         cardContent= "Lorem ipsum"
       />
     </div>
+    <div class="o-articles">
+      <card :cardDate= "[ {month: 'Jun', day: '31'} ]"
+        cardHeader= "Hello Universe"
+        cardContent= "Lorem ipsum Dolor isset"
+      />
+    </div>
+    <router-link to="/foo">Go to Foo</router-link>
+    <router-link to="/bar">Go to Bar</router-link>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
 import Card from './components/Card.vue'
-import Vue from 'vue'
-import VueRouter from 'vue-router'
 
 export default {
   name: 'app',

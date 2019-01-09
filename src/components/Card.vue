@@ -1,7 +1,7 @@
 <template>
   <div class="c-card article-block">
     <a href="" class="gridContainer">
-      <div class="o-date" v-for='date in cardDate' :key="date">
+      <div class="o-date" v-for='(date, index) in cardDate' :key="index">
         <span class="month">{{date.month}}</span>
         <span class="day">{{date.day}}</span>
       </div>
@@ -22,7 +22,7 @@ export default {
   props: {
     cardDate: Array,
     cardHeader: String,
-    cardContent: Array,
+    cardContent: String,
     styleClass: String
   }
 }
@@ -87,8 +87,7 @@ export default {
       color: #c2c2c2;
       transition: all 0.5s ease;
       cursor: pointer;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-column: auto/span 4;
     }
     .article{
       overflow: hidden;
