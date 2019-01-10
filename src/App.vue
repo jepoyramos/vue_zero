@@ -13,28 +13,35 @@
         cardHeader= "Hello World"
         cardContent= "Lorem ipsum"
       />
-    </div>
-    <div class="o-articles">
+      <card :cardDate= "[ {month: 'Jun', day: '31'} ]"
+        cardHeader= "Hello Universe"
+        cardContent= "Lorem ipsum Dolor isset"
+      />
+      <card :cardDate= "[ {month: 'Jun', day: '31'} ]"
+        cardHeader= "Hello Universe"
+        cardContent= "Lorem ipsum Dolor isset"
+      />
       <card :cardDate= "[ {month: 'Jun', day: '31'} ]"
         cardHeader= "Hello Universe"
         cardContent= "Lorem ipsum Dolor isset"
       />
     </div>
-    <router-link to="/foo">Go to Foo</router-link>
-    <router-link to="/bar">Go to Bar</router-link>
-    <router-view></router-view>
+    <Footer copyright="Anvaya Cove - Copyright © 2016 - Ayala Land Premier" />
+    <!-- <router-view></router-view> -->
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
 import Card from './components/Card.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'app',
   components: {
     Header,
-    Card
+    Card,
+    Footer
   },
   data () {
     return {

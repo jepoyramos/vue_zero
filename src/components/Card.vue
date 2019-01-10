@@ -33,16 +33,22 @@ export default {
   .article-block{
     display: inline-block;
     border: 1px solid #ededed;
-    margin: 20px 0;
+    margin: 20px 20px;
     text-align: left;
     transition: all 0.5s ease;
     cursor: pointer;
+    width: 25%;
+    color: #303030;
     &:hover{
       border:  1px solid #212121;
       button{
         border-top: 1px solid #212121;
         color: #212121;
       }
+    }
+    a{
+      text-decoration: none;
+      color: #303030; 
     }
     .o-date{
       display: inline-block;
@@ -51,7 +57,6 @@ export default {
       text-transform: uppercase;
       text-align: center;
       line-height: 35px;
-      color: #303030;
       vertical-align: top;
     }
     .month{
@@ -70,7 +75,7 @@ export default {
     }
     .article{
       display: inline-block;
-      padding: 10px 0;
+      padding: 10px;
       height: 133px;
       color: #303030;
       h3{

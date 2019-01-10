@@ -3,7 +3,10 @@
 		<li v-for='menu in menuItems'>
 			<a :href="menu.link">{{menu.linkName}}</a>
 		</li>
+    <!-- <router-link to="/foo">Go to Foo</router-link>
+    <router-link to="/bar">Go to Bar</router-link> -->
 	</ul>
+  
 </template>
 
 <script>
