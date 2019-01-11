@@ -25,6 +25,10 @@
         cardHeader= "Hello Universe"
         cardContent= "Lorem ipsum Dolor isset"
       />
+      <card :cardDate= "[ {month: 'Jun', day: '31'} ]"
+        cardHeader= "Hello Universe"
+        cardContent= "Lorem ipsum Dolor isset"
+      />
     </div>
     <Footer copyright="Anvaya Cove - Copyright © 2016 - Ayala Land Premier" />
     <!-- <router-view></router-view> -->

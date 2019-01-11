@@ -11,7 +11,7 @@
           {link:'link1', linkName: 'Our Community'},
           {link:'link2', linkName: 'Services'},
           {link:'link3', linkName: 'Documents'},
-        ]"
+        ]" 
       />
     </div>
     <div class="gridColumn">
